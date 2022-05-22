@@ -18,10 +18,10 @@ const data = {
         "Github, Gitlab",
     ],
     "education": [
-        ["UniverKyrgyz State Technical University named after Isak Razzakov"],
+        "UniverKyrgyz State Technical University named after Isak Razzakov",
     ],
     "achievements": [
         "Completed courses in HTML, CSS, JS 2021-2022",
     ],
-    "profile": `I welcome you to my page! Thanks for reading my portfolio. My name is Viktor Vladimirovich and I'm a junior JavaScript, TypeScript, and the React Framework. Successfully completed ItGit courses in 2022. I am currently looking for a job as a Front End Developer. I speak English at Intermedia+ level. Personal qualities: punctuality, sociability, friendliness, fast learner, I easily find a common language with people, I always deal with difficulties calmly and quickly find a solution to the problem. I will be very happy to work in your team.`
+    "profile": "I welcome you to my page! Thanks for reading my portfolio. My name is Viktor Vladimirovich and I'm a junior JavaScript, TypeScript, and the React Framework. Successfully completed ItGit courses in 2022. I am currently looking for a job as a Front End Developer. I speak English at Intermedia+ level. Personal qualities: punctuality, sociability, friendliness, fast learner, I easily find a common language with people, I always deal with difficulties calmly and quickly find a solution to the problem. I will be very happy to work in your team."
 };
