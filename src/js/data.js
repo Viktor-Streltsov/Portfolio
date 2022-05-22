@@ -18,7 +18,7 @@ const data = {
         "Github, Gitlab",
     ],
     "education": [
-        "UniverKyrgyz State Technical University named after Isak Razzakov",
+        ["UniverKyrgyz State Technical University named after Isak Razzakov"],
     ],
     "achievements": [
         ["Completed courses in HTML, CSS, JS 2021-2022"],
