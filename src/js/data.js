@@ -7,7 +7,7 @@ const data = {
     "email": "Vik.O.r_23@proton.me",
     "GIThub": "https://github.com/Viktor-Streltsov/Projects/blob/main/ProjectMag/components/index.js",
     "linkedin": "Not_the_Morty",
-    "address": "КР г.Бишкек д.49",
+    "address": "",
     "skills": [
         "HTML",
         "CSS(SCSS, Lees)",
