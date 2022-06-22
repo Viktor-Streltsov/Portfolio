@@ -22,9 +22,9 @@ document.querySelector('.experience-list').innerHTML = expirienceData;
  */
 
 document.querySelector('.contacts-block').innerHTML += `<li><a href="tel:${data.phone}">${data.phone}</a></li>`
-document.querySelector('.contacts-block').innerHTML += `<span><a href="mailto:${data.email}">Email</a></span>`
+document.querySelector('.contacts-block').innerHTML += `<span><a href="mailto:${data.email}">Email </a></span>`
 document.querySelector('.contacts-block').innerHTML += `<span><a href="${data.GIThub}">🠔 GitHub ➜</a></span>`
-document.querySelector('.contacts-block').innerHTML += `<span><a href="https://t.me/${data.linkedin}">Telegram</a></span>`
+document.querySelector('.contacts-block').innerHTML += `<span><a href="https://t.me/${data.linkedin}"> Telegram</a></span>`
 document.querySelector('.address').innerHTML = `<p>${data.address}</p>`;
 document.querySelector('#my-photo').src = data.photo;
 
