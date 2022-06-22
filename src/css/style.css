@@ -22,6 +22,8 @@ article {
 
 .contacts-block {
     text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
 }
 
 .cv-header, .profile, .expirience, .company-name {
