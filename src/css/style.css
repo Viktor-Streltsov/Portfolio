@@ -25,9 +25,9 @@ article {
 }
 
 .line-text {
-    font-size: 21px;
-    border-left: 2px solid green;
-    border-right: 2px solid green;
+    font-size: 18px;
+    border-left: 2px dashed green;
+    border-right: 2px dashed green;
     border-bottom: 2px solid green;
 }
 
