@@ -22,8 +22,13 @@ article {
 
 .contacts-block {
     text-align: center;
-    text-decoration: underline;
+}
+
+.line-text {
     font-size: 20px;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    border-bottom: 2px solid green;
 }
 
 .cv-header, .profile, .expirience, .company-name {
