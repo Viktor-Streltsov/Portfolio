@@ -25,7 +25,7 @@ document.querySelector('.contacts-block').innerHTML += `<li><a href="tel:${data.
 document.querySelector('.contacts-block').innerHTML += `<span><a href="mailto:${data.email}">Email </a></span>`
 document.querySelector('.contacts-block').innerHTML += `<span><a href="${data.GIThub}">🠔 GitHub ➜</a></span>`
 document.querySelector('.contacts-block').innerHTML += `<span><a href="https://t.me/${data.linkedin}"> Telegram </a></span>`
-document.querySelector('.contacts-block').innerHTML += `<span><a href="star-g6o5tnlvz-viktor-streltsov.vercel.app"> My PROJECT StarWars!!! </a></span>`
+document.querySelector('.contacts-block').innerHTML += `<span><a href="https://star-viktor-streltsov.vercel.app/"> My PROJECT StarWars!!! </a></span>`
 document.querySelector('#my-photo').src = data.photo;
 
 /**
