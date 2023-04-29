@@ -1,7 +1,7 @@
 const data = {
     "first_name": "Viktor",
     "last_name": "Streltsov",
-    "job_title": "Junior Front-end Development",
+    "job_title": "Front-end Development",
     "photo": "images/I.jpg",
     "phone": "+966-557-501-017",
     "email": "Vik.O.r_23@proton.me",
