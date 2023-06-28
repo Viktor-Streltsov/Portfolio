@@ -12,10 +12,10 @@ const data = {
         "HTML",
         "CSS(SCSS, Lees)",
         "JavaScript",
+        "JS(OOP)",
         "TypeScript",
-        "React/Redux",
-        "OOP(Rest,API)",
-        "Github, Gitlab",
+        "React/Redux/Redux Toolkit",
+        "Github",
         "Gulp",
         "Bootstrap"
     ],
