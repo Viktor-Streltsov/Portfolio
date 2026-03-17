@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import styles from "./darkModeToggle.module.css"
+import styles from "./darkModeToggle.module.scss"
 import { ThemeContext } from "@/context/ThemeContext"
 
 

@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 const Skills = () => {
   return (
@@ -9,27 +9,27 @@ const Skills = () => {
         <div className={styles.item}>
           <h2 className={styles.category}>Frontend</h2>
           <ul className={styles.list}>
-            <li>HTML / CSS</li>
+            <li>HTML / CSS / SCSS</li>
             <li>JavaScript / TypeScript</li>
             <li>React / Next.js</li>
           </ul>
         </div>
 
         <div className={styles.item}>
-          <h2 className={styles.category}>Backend</h2>
+          <h2 className={styles.category}>State & Data</h2>
           <ul className={styles.list}>
-            <li>Node.js</li>
-            <li>REST API</li>
-            <li>Databases</li>
+            <li>Redux / Redux Toolkit</li>
+            <li>Zustand / jotai</li>
+            <li>React Query / TanStack Query</li>
           </ul>
         </div>
 
         <div className={styles.item}>
-          <h2 className={styles.category}>Tools</h2>
+          <h2 className={styles.category}>Tooling</h2>
           <ul className={styles.list}>
             <li>Git</li>
-            <li>VS Code</li>
-            <li>Figma</li>
+            <li>Node.js / Vite / Gulp</li>
+            <li>CI-friendly, production‑ready workflow</li>
           </ul>
         </div>
       </div>

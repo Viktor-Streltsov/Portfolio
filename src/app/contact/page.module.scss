@@ -1,0 +1,81 @@
+.container {
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 24px;
+}
+
+.infoCard,
+.projectsCard {
+  border-radius: 12px;
+  border: 1px solid #2b2b2b;
+  background: #111;
+  padding: 20px 22px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.role {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 16px;
+}
+
+.infoRow {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 12px;
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+}
+
+.value {
+  font-size: 14px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.projectsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.projectsList a {
+  color: #bbb;
+}
+
+.projectsList a:hover {
+  color: #53c28b;
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}

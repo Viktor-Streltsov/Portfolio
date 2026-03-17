@@ -1,5 +1,5 @@
 import Button from "@/components/Button/Button";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import Image from "next/image";
 
 const About = () => {
@@ -7,54 +7,59 @@ const About = () => {
     <div className={styles.container}>
       <div className={styles.imgContainer}>
         <Image
-          src="https://img.freepik.com/free-photo/paper-people-chain-on-green-grass-unity-concept_632805-35.jpg?w=1380&t=st=1685890833~exp=1685891433~hmac=46f15c2161ca525e238313ec9dc0812864411c64035b664d7abecd75e33494e1"
+          src="/hero.png"
           fill={true}
-          alt="about us"
+          alt="Стрельцов Виктор"
           className={styles.img}
         />
         <div className={styles.imgText}>
-          <h1 className={styles.imgTitle}>Lorem ipsum dolor sit</h1>
+          <h1 className={styles.imgTitle}>Стрельцов Виктор</h1>
           <h2 className={styles.imgDesc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Frontend Developer / Frontend‑разработчик
           </h2>
         </div>
       </div>
 
       <div className={styles.textContainer}>
         <div className={styles.item}>
-          <h1 className={styles.title}>Who Are We?</h1>
+          <h1 className={styles.title}>Обо мне</h1>
           <p className={styles.desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            quae dolor, optio voluptatibus magnam iure esse tempora beatae. A
-            suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Ducimus quae dolor, optio voluptatibus magnam iure esse tempora
-            beatae, a suscipit eos. Animi quibusdam cum omnis officiis
+            Здравствуйте! Меня зовут Виктор Стрельцов, я Frontend Developer с
+            коммерческим опытом разработки интерфейсов для продакшн‑проектов.
+            Работаю с React, Next.js и TypeScript, уверенно чувствую
+            React‑экосистему и быстро вникаю в существующий код.
             <br />
             <br />
-            voluptatum quo ea eveniet? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Ducimus quae dolor, optio voluptatibus magnam iure
-            esse tempora beatae, a suscipit eos. Animi quibusdam cum omnis
-            officiis voluptatum quo ea eveniet?
+            В проектах занимался разработкой и поддержкой клиентской части
+            веб‑приложений, созданием интерфейсов и их интерактивных элементов,
+            рефакторингом кода и реализацией функциональности по техническому
+            заданию. Использую современные инструменты работы с состоянием:
+            Redux Toolkit, Zustand, jotai, React Query / TanStack Query, а
+            также SCSS, Git, Vite и Gulp.
+            <br />
+            <br />
+            Проживаю в Бишкеке, гражданство — Россия. Открыт к удалённому
+            формату, релокации и командировкам. Интересны проекты с
+            продуманным процессом разработки, где можно приносить пользу
+            бизнесу и развиваться как специалист.
           </p>
         </div>
 
         <div className={styles.item}>
-          <h1 className={styles.title}>What We Do?</h1>
+          <h1 className={styles.title}>Как я работаю</h1>
           <p className={styles.desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            quae dolor, optio voluptatibus magnam iure esse tempora beatae, a
-            suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. -
-            Creative Illustrations
+            Мне важны понятные требования, открытая коммуникация и аккуратный
+            код. Люблю продумывать интерфейсы так, чтобы ими было удобно
+            пользоваться на разных устройствах, а разработчикам было легко
+            поддерживать и развивать продукт.
             <br />
-            <br /> - Dynamic Websites
             <br />
-            <br /> - Fast and Handy
-            <br />
-            <br /> - Mobile Apps
+            В работе опираюсь на дизайн‑макеты, договариваюсь о приоритетах и
+            стараюсь предлагать решения, которые одновременно выглядят хорошо и
+            остаются реалистичными по срокам. Открыт к обратной связи и
+            командной работе.
           </p>
-          <Button url="/contact" text="Contact" />
+          <Button url="/contact" text="Связаться со мной" />
         </div>
       </div>
     </div>
