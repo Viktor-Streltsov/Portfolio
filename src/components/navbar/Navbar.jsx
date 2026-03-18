@@ -1,49 +1,58 @@
-"use client"
+"use client";
 
-import Link from "next/link"
+import Link from "next/link";
 import styles from "./page.module.scss";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
+import LanguageToggle from "../LanguageToggle/LanguageToggle";
+import { useLanguage } from "@/context/LanguageContext";
 
-const links = [
+const Navbar = () => {
+  const { lang } = useLanguage();
+
+  const links = [
     {
       id: 1,
-      title: "Home",
+      title: lang === "en" ? "Home" : "Главная",
       url: "/",
     },
     {
       id: 2,
-      title: "Portfolio",
+      title: lang === "en" ? "Portfolio" : "Портфолио",
       url: "/portfolio",
     },
     {
       id: 3,
-      title: "Skills",
+      title: lang === "en" ? "Skills" : "Навыки",
       url: "/skills",
     },
     {
       id: 4,
-      title: "About",
+      title: lang === "en" ? "About" : "Обо мне",
       url: "/about",
     },
     {
       id: 5,
-      title: "Contact",
+      title: lang === "en" ? "Contact" : "Контакты",
       url: "/contact",
     },
   ];
 
-const Navbar = () => {
   return (
     <nav className={styles.container}>
-        <Link href='/' className={styles.logo}>Portfolio</Link>
-        <div className={styles.links}>
-          <DarkModeToggle />
-            {links.map((link) =>(
-                <Link key={link.id} href={link.url}>{link.title}</Link>
-            ))}
-        </div>
+      <Link href="/" className={styles.logo}>
+        Portfolio
+      </Link>
+      <div className={styles.links}>
+        <LanguageToggle />
+        <DarkModeToggle />
+        {links.map((link) => (
+          <Link key={link.id} href={link.url}>
+            {link.title}
+          </Link>
+        ))}
+      </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

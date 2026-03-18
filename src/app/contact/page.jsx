@@ -1,21 +1,25 @@
-import styles from "./page.module.scss";
-import Image from "next/image";
+"use client";
 
-export const metadata = {
-  title: "Contact",
-  description: "Контакты Стрельцова Виктора",
-};
+import { useLanguage } from "@/context/LanguageContext";
+import styles from "./page.module.scss";
 
 const Contact = () => {
+  const { lang } = useLanguage();
+  const isEn = lang === "en";
+
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Контакты</h1>
+      <h1 className={styles.title}>{isEn ? "Contacts" : "Контакты"}</h1>
       <div className={styles.content}>
         <div className={styles.infoCard}>
           <h2 className={styles.name}>Стрельцов Виктор</h2>
-          <p className={styles.role}>Frontend Developer / Frontend‑разработчик</p>
+          <p className={styles.role}>
+            Frontend Developer / Frontend‑разработчик
+          </p>
           <div className={styles.infoRow}>
-            <span className={styles.label}>Телефон / WhatsApp / Telegram</span>
+            <span className={styles.label}>
+              {isEn ? "Phone / WhatsApp / Telegram" : "Телефон / WhatsApp / Telegram"}
+            </span>
             <a href="tel:+996557501017" className={styles.value}>
               +996&nbsp;557&nbsp;501&nbsp;017
             </a>
@@ -27,19 +31,29 @@ const Contact = () => {
             </a>
           </div>
           <div className={styles.infoRow}>
-            <span className={styles.label}>Город</span>
-            <span className={styles.value}>Бишкек</span>
+            <span className={styles.label}>
+              {isEn ? "City" : "Город"}
+            </span>
+            <span className={styles.value}>
+              {isEn ? "Bishkek" : "Бишкек"}
+            </span>
           </div>
           <div className={styles.infoRow}>
-            <span className={styles.label}>Формат работы</span>
+            <span className={styles.label}>
+              {isEn ? "Work format" : "Формат работы"}
+            </span>
             <span className={styles.value}>
-              Удалённо, открыт к переезду и командировкам
+              {isEn
+                ? "Remote, open to relocation and business trips"
+                : "Удалённо, открыт к переезду и командировкам"}
             </span>
           </div>
         </div>
 
         <div className={styles.projectsCard}>
-          <h2 className={styles.subtitle}>Ссылки на проекты</h2>
+          <h2 className={styles.subtitle}>
+            {isEn ? "Project links" : "Ссылки на проекты"}
+          </h2>
           <ul className={styles.projectsList}>
             <li>
               <a
@@ -47,7 +61,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                NEXT PIZZA — сервис заказа пиццы
+                NEXT PIZZA — {isEn ? "pizza ordering service" : "сервис заказа пиццы"}
               </a>
             </li>
             <li>
@@ -56,7 +70,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                STUFF — e‑commerce витрина
+                STUFF — e‑commerce {isEn ? "showcase" : "витрина"}
               </a>
             </li>
             <li>
