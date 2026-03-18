@@ -16,6 +16,20 @@ const Contact = () => {
           <p className={styles.role}>
             Frontend Developer / Frontend‑разработчик
           </p>
+
+          <div className={styles.infoRow}>
+            <span className={styles.label}>
+              {isEn ? "Resume" : "Резюме"}
+            </span>
+            <a
+              href="/api/resume"
+              download
+              className={styles.downloadLink}
+            >
+              {isEn ? "Download CV" : "Скачать резюме"}
+            </a>
+          </div>
+
           <div className={styles.infoRow}>
             <span className={styles.label}>
               {isEn ? "Phone / WhatsApp / Telegram" : "Телефон / WhatsApp / Telegram"}
