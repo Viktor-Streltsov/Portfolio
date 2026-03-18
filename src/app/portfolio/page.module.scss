@@ -72,3 +72,58 @@
   font-size: 13px;
   color: #999;
 }
+
+:global(.light) .card {
+  border-color: #e6e6e6;
+  background: #fff;
+}
+
+:global(.light) .card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-color: #53c28b;
+}
+
+:global(.light) .role {
+  color: #6b6b6b;
+}
+
+:global(.light) .desc {
+  color: #555;
+}
+
+:global(.light) .stack {
+  color: #2f8c53;
+}
+
+:global(.light) .linkHint {
+  color: #7a7a7a;
+}
+
+@media (max-width: 768px) {
+  .selectTitle {
+    font-size: 28px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .projectTitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .selectTitle {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+}

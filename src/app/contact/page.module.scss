@@ -74,6 +74,71 @@
   color: #53c28b;
 }
 
+:global(.light) .infoCard,
+:global(.light) .projectsCard {
+  border-color: #e6e6e6;
+  background: #fff;
+}
+
+:global(.light) .title {
+  color: #111;
+}
+
+:global(.light) .name {
+  color: #111;
+}
+
+:global(.light) .role {
+  color: #6b6b6b;
+}
+
+:global(.light) .label {
+  color: #888;
+}
+
+:global(.light) .projectsList a {
+  color: #555;
+}
+
+:global(.light) .projectsList a:hover {
+  color: #2f8c53;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .content {
+    gap: 16px;
+  }
+
+  .infoCard,
+  .projectsCard {
+    padding: 16px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .infoCard,
+  .projectsCard {
+    padding: 14px 16px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .projectsList {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 900px) {
   .content {
     grid-template-columns: 1fr;

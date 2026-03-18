@@ -3,7 +3,7 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
 import Button from "@/components/Button/Button";
-import Hero from "../../public/hero.png";
+import Hero from "../../public/sticker.webp";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Home() {
