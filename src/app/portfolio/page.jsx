@@ -5,6 +5,7 @@ import styles from "./page.module.scss";
 import nextPizzaImg from "./img/next-pizza.png";
 import stuffShopImg from "./img/stuff-shop.png";
 import starWarsImg from "./img/star-wars-dashboard.png";
+import canvas from "./img/canvas.png";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Portfolio = () => {
@@ -52,6 +53,26 @@ const Portfolio = () => {
       stack: "React, JavaScript, REST API, CSS",
       image: starWarsImg,
       link: "https://star-ashy.vercel.app",
+    },
+    {
+      id: 4,
+      title: isEn
+          ? "Fabric.js Graphic Editor"
+          : "Графический редактор на Fabric.js",
+
+      role: isEn
+          ? "Frontend development with Fabric.js"
+          : "Графический редактор на Fabric.js",
+
+      desc: isEn
+          ? "Web application for creating and editing graphic compositions using Fabric.js. Supports shapes, icons, object transform, hotkeys and export to PNG/SVG."
+          : "Веб-приложение для создания и редактирования графических композиций на Fabric.js. Поддержка фигур, иконок, трансформаций, горячих клавиш и экспорта в PNG/SVG.",
+
+      stack: "JavaScript, Fabric.js, HTML, CSS",
+
+      image: canvas,
+
+      link: "https://canvas-progect.vercel.app/",
     },
   ];
 
